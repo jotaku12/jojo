@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <style>
+    .center-container {
+    text-align: center; /* 텍스트 정렬을 사용하여 이미지를 중앙 정렬 */
         /* 모달 스타일 */
-  .modal {
+    .modal {
     display: none; /* 기본적으로 모달을 숨김 */
     position: fixed;
     z-index: 1;
@@ -44,15 +46,6 @@
     width: 100%;
     height: auto;
   }
-
-  /* 닫기 버튼 스타일 */
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-
   .close:hover,
   .close:focus {
     color: black;
@@ -97,6 +90,7 @@
     </div>
     
 <!-- 썸네일 이미지 -->
+<div class="center-container"><!-- 썸네일 이미지 컨테이너 사용 텍스트 중앙 정렬 -->
 <img src="https://img.tvreportcdn.de/cms-content/uploads/2023/12/14/b9656a0c-3af0-40a1-9c6b-68a0c7385203.jpg" alt="Thumbnail 1" style="width:100px;height:auto;" onclick="openModal()">
 
 <!-- 모달 창 -->

@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap" rel="stylesheet">
     <style>
-    .center-container {
-    text-align: center; /* 텍스트 정렬을 사용하여 이미지를 중앙 정렬 */
         /* 모달 스타일 */
-    .modal {
+  .modal {
     display: none; /* 기본적으로 모달을 숨김 */
     position: fixed;
     z-index: 1;
@@ -20,15 +16,15 @@
     width: 100%;
     height: 100%;
     overflow: auto; /* 필요시 스크롤 */
-    background-color: rgb(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
   }
 
   /* 모달 콘텐츠 스타일 */
   .modal-content {
-    background-color: #fefefe;
+    background-color: #fefefe00;
     margin: 15% auto; /* 중앙 정렬 */
     padding: 20px;
-    border: 1px solid #888;
+    border: 1px solid #88888800;
     width: 80%;
     max-width: 600px; /* 최대 너비 */
   }
@@ -46,6 +42,15 @@
     width: 100%;
     height: auto;
   }
+
+  /* 닫기 버튼 스타일 */
+  .close {
+    color: #aaaaaa00;
+    float: right;
+    font-size: 0px;
+    font-weight: bold;
+  }
+
   .close:hover,
   .close:focus {
     color: black;
@@ -84,14 +89,14 @@
     </style>
 </head>
 <body>
-
     <div class="center-text">
         <span class="special-word">Jo&Oli's Wedding</span><br>
     </div>
-    
+
+
 <!-- 썸네일 이미지 -->
-<div class="center-container"><!-- 썸네일 이미지 컨테이너 사용 텍스트 중앙 정렬 -->
-<img src="https://img.tvreportcdn.de/cms-content/uploads/2023/12/14/b9656a0c-3af0-40a1-9c6b-68a0c7385203.jpg" alt="Thumbnail 1" style="width:100px;height:auto;" onclick="openModal()">
+<div class="responsive-image-container">
+<img src="https://i.ibb.co/JpvgKPf/IMG-0917.jpg" alt="Thumbnail 1" onclick="openModal()">
 
 <!-- 모달 창 -->
 <div id="myModal" class="modal">
